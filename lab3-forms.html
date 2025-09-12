@@ -1,0 +1,71 @@
+<form action="https://www.w3schools.com/action_page.php" method="get">
+  <h1>Place A Coffee Order</h1>
+  <section>
+    <h3>Customer Information</h3>
+    <fieldset>
+      <legend>Please Enter Your Information Below</legend>
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="customer_name"/>
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="customer_email"/>
+      </p>
+    </fieldset>
+  </section>
+  <section>
+    <h3>Coffee Order</h3>
+    <fieldset>
+      <legend>Coffee Type, Size, & Extras</legend>
+      <p>
+        <label for="coffee type"><span><u>Coffee Type:</u></span></label>
+        <select id="coffee type" name="coffee type">
+          <option value="Latte">Latte</option>
+          <option value="Cappucino">Cappucino</option>
+          <option value="Americano">Americano</option>
+          <option value="Espresso">Espresso</option>
+        </select>
+      </p>
+      <p>
+        <label for="size"><span><u>Coffee Size:</u></span></label>
+        <p>
+          <input type="radio" name="size" id="size 1" value="Small"/>
+          <label for="size 1">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size 2" value="Medium"/>
+          <label for="size 2">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size 3" value="Large"/>
+          <label for="size 3">Large</label>
+        </p>
+      </p>
+      <p>
+        <label for="extras"><span><u>Extras:</u></span></label>
+        <p>
+          <input type="checkbox" name="extras" id="extra 1" value="Whipped Cream"/>
+          <label for="extra 1">Whipped Cream</label>
+        </p>
+        <p>
+          <input type="checkbox" name="extras" id="extra 2" value="Extra Shot"/>
+          <label for="extra 2">Extra Shot</label>
+        </p>
+        <p>
+          <input type="checkbox" name="extras" id="extra 3" value="Almond Milk"/>
+          <label for="extra 3">Almond Milk</label>
+        </p>
+      </p>
+      <p>
+        <label for="special instructions"><span><u>Special Instructions:</u></span></label>
+        <p>
+          <textarea placeholder="Add any additional instructions"></textarea>
+        </p>
+      </p>
+    </fieldset>
+  </section>
+  <p>
+    <input type="Submit" value="Complete Order"/>
+  </p>
+</form>
