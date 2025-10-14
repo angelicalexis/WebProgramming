@@ -5,6 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java Haven</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    
+    body {
+      font-family: 'Georgia', serif;
+      background-color: Peru;
+      color: Tan;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: PeachPuff;
+      color: SaddleBrown;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: RosyBrown;
+      padding: 1rem;
+    }
+
+    .nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .main-content {
+      grid-area: main;
+      padding: 1rem;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: PeachPuff;
+      color: SaddleBrown;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    
+    .flex-item {
+      background-color: Seashell;
+      border: 5px solid SaddleBrown;
+      border-radius: 20px;
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    @media (width >= 600px) {
+      body {
+        grid-template-areas:
+          "header header"
+          "nav main"
+          "footer footer";
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+      }
+      
+      .nav ul {
+        flex-direction: column;
+      }
+
+      .nav li {
+        margin: 1rem;
+      }
+      
+  </style>
 </head>
 <body>
   <header class="header">
